@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<h3>İstatistik Sayfası</h3>
+<br />
+<style>
+    .container {
+        display: flex;
+        flex-wrap: nowrap; /* Kutuların tek bir satırda yer almasını sağlar */
+        gap: 20px; /* Kutular arası boşluk */
+        overflow-x: auto; /* Eğer kutular ekrana sığmazsa yatay kaydırma sağlar */
+    }
+
+    .stat-box {
+        flex: 0 0 auto; /* Kutuların esnekliğini ayarlar, burada sabit boyutlu olmalarını sağlar */
+        width: 200px; /* Kutu boyutu */
+        height: 200px; /* Kutu boyutu */
+        background-color: #f0f0f0;
+        border-radius: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 40px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-content {
+        text-align: center;
+    }
+
+        .box-content i {
+            font-size: 24px; /* Simgelerin font boyutu küçültüldü */
+            margin-bottom: 10px; /* Metin ile simge arası boşluk azaltıldı */
+        }
+
+    h4 {
+        font-size: 19px; /* h4 başlık font boyutu küçültüldü */
+        padding: 8px; /* Başlık içeriği ile kenarlar arasındaki boşluk azaltıldı */
+       
+        color: black; /* Metin rengi */
+       
+        
+    }
+</style>
+
+<div class="container">
+    <div class="stat-box">
+        <div class="box-content">
+            <i class="fas fa-chart-bar"></i>
+            <h4>Toplam Kategori : @ViewBag.Kategori</h4>
+        </div>
+    </div>
+    <div class="stat-box">
+        <div class="box-content">
+            <i class="fas fa-users"></i>
+            <h4>Bilişim Başlık Sayısı : @ViewBag.Baslik</h4>
+        </div>
+    </div>
+    <div class="stat-box">
+        <div class="box-content">
+            <i class="fas fa-money-bill-wave"></i>
+            <h4>Yazar Adında A harfi Geçenlerin Sayısı : @ViewBag.WriterStatisc</h4>
+        </div>
+    </div>
+    <div class="stat-box">
+        <div class="box-content">
+            <i class="fas fa-clock"></i>
+            <h4>En Fazla Başlığa Ait Kategori : @ViewBag.MaxHeadings</h4>
+        </div>
+    </div>
+    <div class="stat-box">
+        <div class="box-content">
+            <i class="fas fa-tasks"></i>
+            <h4>Aktif olmayan ve aktif olan kategori farkı : @ViewBag.statusDifference</h4>
+        </div>
+    </div>
+</div>
