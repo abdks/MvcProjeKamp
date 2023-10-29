@@ -23,6 +23,8 @@ namespace EntityLayer.Concrete
         [StringLength(300)]
         public string WriterPassword { get; set; }
         [StringLength(100)]
+        public string WriterTitle { get; set; }
+        [StringLength(100)]
         public string WriterAbout { get; set; }
 
 
