@@ -11,36 +11,42 @@ namespace BusinessLayer.Concrete
 {
     public class HeadingManager : IHeadingService
     {
-        IHeadingDal _headingDal;
+        IHeadingDal _headerdal;
 
-        public HeadingManager(IHeadingDal headingDal)
+        public HeadingManager(IHeadingDal headerdal)
         {
-            _headingDal = headingDal;
+            _headerdal = headerdal;
         }
 
         public Heading GetByID(int id)
         {
-            return _headingDal.Get(x => x.HeadingID == id);
+            return _headerdal.Get(x => x.HeadingID == id);
         }
 
         public List<Heading> GetList()
         {
-            return _headingDal.List();
+            return _headerdal.List();
         }
 
         public void HeadingAdd(Heading heading)
         {
-            _headingDal.Insert(heading);
+            _headerdal.Insert(heading);
         }
 
-        public void HeadingDelete(Heading heading)
+       
+
+    
+
+        public void HeadingDelete(Heading p)
         {
-            _headingDal.Delete(heading);
+            _headerdal.Delete(p);
         }
 
-        public void HeadingUpdate(Heading heading)
+       
+
+        public void HeadingUpdate(Heading p)
         {
-            _headingDal.Update(heading);
+            _headerdal.Update(p);
         }
     }
 }

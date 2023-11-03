@@ -16,7 +16,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Content> Contents { get; set; }
         public DbSet<Heading> headings { get; set; }
         public DbSet<Writer> Writers { get; set; }
-
+        public DbSet <Message> Messages { get; set; }     
 
     }
 }

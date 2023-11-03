@@ -79,6 +79,22 @@
     <Compile Include="Migrations\202310282340014_mig_54.designer.cs">
       <DependentUpon>202310282340014_mig_54.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202310291717410_mig_de.cs" />
+    <Compile Include="Migrations\202310291717410_mig_de.designer.cs">
+      <DependentUpon>202310291717410_mig_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202310291729156_mig_dene.cs" />
+    <Compile Include="Migrations\202310291729156_mig_dene.designer.cs">
+      <DependentUpon>202310291729156_mig_dene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202310301523409_mig_65.cs" />
+    <Compile Include="Migrations\202310301523409_mig_65.designer.cs">
+      <DependentUpon>202310301523409_mig_65.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311031210084_mig_add_messageclass.cs" />
+    <Compile Include="Migrations\202311031210084_mig_add_messageclass.designer.cs">
+      <DependentUpon>202311031210084_mig_add_messageclass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -101,6 +117,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202310282340014_mig_54.resx">
       <DependentUpon>202310282340014_mig_54.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310291717410_mig_de.resx">
+      <DependentUpon>202310291717410_mig_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310291729156_mig_dene.resx">
+      <DependentUpon>202310291729156_mig_dene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310301523409_mig_65.resx">
+      <DependentUpon>202310301523409_mig_65.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311031210084_mig_add_messageclass.resx">
+      <DependentUpon>202311031210084_mig_add_messageclass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
