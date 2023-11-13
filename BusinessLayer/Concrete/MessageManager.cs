@@ -19,7 +19,8 @@ namespace BusinessLayer.Concrete
 
         public Message GetByID(int id)
         {
-            throw new NotImplementedException();
+            return _messageDal.Get(x => x.MessageID == id);
+
         }
 
         public List<Message> GetListInbox()
@@ -37,7 +38,7 @@ namespace BusinessLayer.Concrete
 
         public void MessageAdd(Message message)
         {
-            throw new NotImplementedException();
+            _messageDal.Insert(message);
         }
 
         public void MessageDelete(Message message)
