@@ -56,6 +56,7 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IImageFileDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfImageFıleDal.cs" />
     <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202310231601022_mig1.cs" />
@@ -96,6 +98,14 @@
     <Compile Include="Migrations\202311031210084_mig_add_messageclass.cs" />
     <Compile Include="Migrations\202311031210084_mig_add_messageclass.designer.cs">
       <DependentUpon>202311031210084_mig_add_messageclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311151854338_mig_addimage_file.cs" />
+    <Compile Include="Migrations\202311151854338_mig_addimage_file.designer.cs">
+      <DependentUpon>202311151854338_mig_addimage_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311151910171_mig_add_admin_table.cs" />
+    <Compile Include="Migrations\202311151910171_mig_add_admin_table.designer.cs">
+      <DependentUpon>202311151910171_mig_add_admin_table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311031210084_mig_add_messageclass.resx">
       <DependentUpon>202311031210084_mig_add_messageclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311151854338_mig_addimage_file.resx">
+      <DependentUpon>202311151854338_mig_addimage_file.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311151910171_mig_add_admin_table.resx">
+      <DependentUpon>202311151910171_mig_add_admin_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
